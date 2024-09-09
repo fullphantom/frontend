@@ -1,7 +1,7 @@
 // esto es para conectar fron y backend
 
 //const url = 'http://localhost:5000/api/'
-const url = 'https://backen-mongo-1.onrender.com/api/'
+const url = 'https://juegos2.onrender.com/api/'
 
 function sendRequest(endPoint,method, data){
     let request = new XMLHttpRequest();
