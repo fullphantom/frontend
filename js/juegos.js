@@ -63,6 +63,7 @@ function guardarJuegos(){
 function cargarDatos(id){
     
     if(id != null){
+    let request = sendRequest('juegos/'+id, 'GET'); 
     let nom = document.getElementById('nombre-n')
     let fec = document.getElementById('fechaCreacion-f')
     let tip = document.getElementById('tipo-t')
