@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slylo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/imagenes/logo.png" alt="logo compañia">
+        </a>
+            <div class="razon-social">
+                <h1 class="press-start-2p-regular" >Formulario Juegos</h1>
+            </div>
+        <nav>
+            <a class="navegacion" href="/index.html">Inicio</a>
+            <a class="navegacion" href="/secciones/juegos.html">Modulo Juegos</a>
+            <a class="navegacion" href="/secciones/clientes.html">Modulo Clientes</a>
+            <a class="navegacion" href="/secciones/form_clientes.html">form Clientes</a>
+            <a class="navegacion" href="/secciones/contacto.html">Contacto</a>
+        
+        </nav>
+    </header>
+
+    <section class="container">
+       
+        <form class="form-AgregarJuego" method="POST">
+
+            <div class="form-Agregar">
+
+                <div class="campo">
+                    <label class="name" for="nombre">Nombre del Juego</label>
+                    <input class="campos" type="text" name="nombre-n" id="nombre-n">
+                </div>
+
+                <div class="campo">
+                    <label class="name" for="fechaCreacion">Fecha Creacion</label>
+                    <input class="campos" type="text" name="fechaCreacion-f" id="fechaCreacion-f">
+                </div>
+
+                <div class="campo">
+                    <label class="name" for="tipo">Tipo</label>
+                    <input class="campos" type="text" name="tipo-t" id="tipo-t">
+                </div>
+
+                <div class="campo">
+                    <label class="name" for="jugadores">Jugadores</label>
+                    <input class="campos" type="number" name="jugadores-j" id="jugadores-j">
+                </div>
+
+                <div class="campo">
+                    <label class="name" for="edad">Clasificacion Edad Jugador</label>
+                    <input class="campos" type="number" name="edad-e" id="edad-e">
+                </div>
+
+                <div class="campo">
+                    <label class="name" for="consola">Consola</label>
+                    <input class="campos" type="text" name="consola-c" id="consola-c">
+                </div>
+
+                <div class="campo">
+                    <label class="name" for="precio">Precio</label>
+                    <input class="campos" type="text" name="precio-p" id="precio-p">
+                </div>
+
+                <div class="editar">
+                    <button class ="boton-guardar" type="button" onclick="guardarJuegos()">Guardar</button>
+                    <button class = "boton-editarF" type="button" id="btn-editar" >Editar</button>  
+                </div>
+            
+            </div>
+    </form>
+
+    </section>
+
+    <script src="/js/request.js"></script>
+    <script src="/js/juegos.js"></script>
+
+    <script>
+        window.onload = function(){
+            let boton = document.getElementById('btn-editar')
+            const url = new URLSearchParams(window.location.search);
+            
+            cargarDatos(url.get('id'));
+            boton.onclick=()=>{
+            modificarJuegos(url.get('id'));
+            }
+        }
+    </script>
+    
+    <footer class="footer">
+        <p>Todos los derechos reservados. Rafael de la Cruz® </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slylo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/imagenes/logo.png" alt="logo compañia">
+        </a>
+            <div class="razon-social">
+                <h1 class="press-start-2p-regular" >Modulo Juegos</h1>
+            </div>
+
+        <nav>
+            <a class="navegacion" href="/index.html">Inicio</a>
+            <a class="navegacion" href="/secciones/clientes.html">Modulo Clientes</a>
+            <a class="navegacion" href="/secciones/form_clientes.html">Form Clientes</a>
+            <a class="navegacion" href="/secciones/form_juegos.html">Form Juegos</a>
+            <a class="navegacion" href="/secciones/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+        <section>
+            <div class="modulo">
+                <button class="agregar" onclick = "window.location ='form_juegos.html'">Agregar</button>
+            </div>
+
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Fecha creacion</th>
+                            <th>Tipo</th>
+                            <th>Jugadores</th>
+                            <th>Edad</th>
+                            <th>Consola</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="juegos-table">
+                        <tr>
+                            <td>1</td>
+                            <td>Goldeneye</td>
+                            <td>1995-06-10</td>
+                            <td>Arcade, puzle</td>
+                            <td>2</td>
+                            <td>15</td>
+                            <td>Nintendo 64</td>
+                            <td>$ 17.000</td>
+                            <td>#</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <script src="/js/request.js"></script>
+        <script src="/js/juegos.js"></script>
+        <script>
+            window.onload = function(){
+                mostrarDatos();
+            }
+        </script>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. Rafael de la Cruz® </p>
+    </footer>
+
+</body>
+</html>

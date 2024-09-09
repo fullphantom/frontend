@@ -1,0 +1,481 @@
+body {
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1{
+font-size: 2rem;
+}
+h2{
+font-size: 1.8rem;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.boton {
+    background-color: rgba(225, 225, 224, .5) ;
+    color: white;
+    padding: 0.3rem 2rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 90%;
+    text-align: center;
+}
+
+.boton:hover{
+    background-color: yellow;
+    color: rgb(10, 10, 10);
+}
+
+.boton-agregar{
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 480px){
+    .boton{
+        width: auto;
+    }
+}
+
+/* estilo de fuente video games*/
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+      
+a{
+    text-decoration: none;
+    color: rgb(252, 250, 250);
+ 
+}
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+   height: 150px;
+    margin-right: 10px;
+}
+
+.razon-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    align-items: center;
+}
+
+.nombre-compañia{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    
+}
+nav a:hover{
+    background-color: yellow;
+    color: rgb(10, 10, 10); 
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        text-align: center;       
+    }
+}
+
+/* seccion baner*/ 
+
+@media ( min-width: 480px ){
+
+}
+
+.baner {
+    border-radius: 30px;
+    background-image: url(/imagenes/baner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    position: relative;
+    margin: 30px;
+}
+
+.contenido-baner{
+    border-radius: 30px;
+    position: absolute;
+    background-color: rgba( 0,0,0, .3 );
+    height: 100%;
+    width: 100%;
+
+    /* se alinea el contenido vertical y horizontalmente*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-baner h2,
+.contenido-baner p{
+    color: white;
+}
+
+.baner2{
+    font-size: 15px;
+    color: yellow;
+    font-weight: bold;
+}
+
+/*SECCION CONTACTO*/
+
+.formulario{
+   
+    background-color: gray;
+    width: min(50rem, 60%);
+    margin: 0 auto;
+    padding: 2rem;
+    padding-right: 5.4rem;
+    border-radius: 1rem;
+}
+
+
+
+@media (min-width: 768px){
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 25rem;
+        column-gap: 4rem;
+    }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1 / 3;
+    }
+}
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea{
+    height: 20rem;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton-enviar{
+    border-radius: 10px;
+    background-color: #ffc107;
+    width: 20%;
+    height: 30px; 
+    cursor: pointer;
+}
+
+.enviar{
+    width: 108.%;
+    display: flex;
+    justify-content:center;
+    padding-top: 15px;
+   
+}
+
+.formulario{
+padding-right: 25px;
+}
+
+.boton-editar{
+    
+    appearance: none;
+    background-color: #dde56f;
+    border-radius: 40em;
+    border-style: none;
+    box-sizing: border-box;
+    color: #080808;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 6px 8px;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .boton-editar:hover {
+    color: rgb(246, 245, 245);
+    background-color: #0f0ffb;
+    transform: scale(1.125);
+  }
+  
+  .boton-editar:active {
+    transform: scale(1.025);
+  }
+
+  .boton-eliminar{
+    appearance: none;
+    background-color: #e5966f;
+    border-radius: 40em;
+    border-style: none;
+    box-sizing: border-box;
+    color: #0c0c0c;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 6px 8px;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .boton-eliminar:hover {
+    color: rgb(252, 249, 249);
+    background-color: #fb0f0f;
+    transform: scale(1.125);
+  }
+  
+  .boton-eliminar:active {
+    transform: scale(1.025);
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+   
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+td, th{
+    padding: 10px;
+    border: 1px solid rgb(12, 12, 12);
+    
+}
+
+table thead{
+    background-color: rgb(250, 184, 108);
+    text-align: center;
+    border: 1px solid white;
+}
+table tbody{ 
+    background-color: rgb(236, 244, 190);
+    text-align: center;
+    border: 1px solid rgb(12, 12, 12);
+}
+
+.agregar {
+    background-color: rgb(252, 155, 90);
+    color: rgb(110, 22, 25);
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.agregar:hover{
+    background-color: yellow;
+    color: rgb(10, 10, 10);
+}
+
+.modulo{
+    display: flex;
+    justify-content: center;
+}
+
+.modulo_juego{
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: bold;
+}
+
+/*formulario clientes y juegos*/
+.name{
+    font-size: 25px;
+}
+
+.form-AgregarJuego, .form-AgregarCliente{
+    background-color: rgb(90, 114, 157);
+    color: white;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+/*----------------*/
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+
+.campos {
+    font-size: 30px;
+    color: rgb(66, 65, 65);
+    width: 100%;
+    height: 5px;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.enviar .boton-enviar{
+    border-radius: 10px;
+    background-color: #ffc107;
+    width: 20%;
+    height: 30px; 
+    cursor: pointer;
+}
+
+.enviar{
+    width: 108.%;
+    display: flex;
+    justify-content:center;
+    padding-top: 15px;
+   
+}
+
+.formulario{
+padding-right: 25px;
+}
+
+.editar .boton-guardar{
+    font-size: 20px;
+}
+
+.editar .boton-editarF{
+ margin-left: 27.5rem;
+ font-size: 20px;
+
+}
+
+.boton-guardar{
+    background-color: #fdfcfc;
+    border-radius: 20px;
+    border-color: rgb(0, 255, 38);
+    color: #0c0c0c;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 8px;
+    text-align: center;
+    transition: all .10s;
+  }
+
+  .boton-guardar:hover {
+    color: rgb(250, 250, 250);
+    background-color: #068d35;
+    border-color: rgb(255, 242, 0);
+  }
+ 
+  .boton-editarF{
+    background-color: #fdfcfc;
+    border-radius: 20px;
+    border-color: rgb(0, 140, 255);
+    color: #0c0c0c;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 8px;
+    text-align: center;
+    transition: all .10s;
+  }
+
+  .boton-editarF:hover {
+    color: rgb(250, 250, 250);
+    background-color: #0044b1;
+    border-color: rgb(255, 242, 0);
+  }
+/*seccion footer*/
+
+.footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer p{
+    color: white;
+}
