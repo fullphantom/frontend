@@ -479,3 +479,123 @@ padding-right: 25px;
 .footer p{
     color: white;
 }
+/*-----------------------seccion index logeo----------------------------*/
+h3{
+    color: rgb(253, 5, 5);
+    font-size: 30px;
+    background-color: #000808;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.modulo-logueo{
+    background-image: url(/imagenes/baner3.jpg);
+    background-size: cover;
+} 
+label{
+    font-size: 25px;
+}
+.logeo{
+    margin-top: 150px;
+}
+
+.login{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/imagenes/wall\ 2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 600px ;
+    height: 500px;
+    padding: 2rem;
+    border-radius: 1rem;
+  
+}
+.input-text{
+    font-size: 18px;
+}
+
+.campo .ini-sesion {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.campo .ini-sesion:hover{
+    background-color: rgb(250, 246, 1);
+    color: rgb(253, 4, 4);
+    font-weight: bold;
+    border-color: red;
+   border-width: 5px;
+}
+
+.registro{
+    color: white;
+}
+
+.registro a{
+    color: yellow;
+}
+
+.registro{
+    margin-top: 10px;
+}
+/*------------------register---------------------*/
+
+.regis{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/imagenes/wall\ 2.png);
+    background-size:contain;
+    width: 500px ;
+    height: 500px;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.campo .registra {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.campo .registra:hover{
+    background-color: rgb(250, 246, 1);
+    color: rgb(253, 4, 4);
+    font-weight: bold;
+    border-color: red;
+    border-width: 5px;
+}
+
+/*---------boton logout---------------*/
+
+.btn-logout1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-logout{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #000808;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn-logout:hover{
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(251, 4, 4)
+}
